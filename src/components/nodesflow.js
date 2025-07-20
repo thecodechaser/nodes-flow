@@ -2,7 +2,7 @@
 
 import { useState, useRef, useCallback } from 'react';
 import ReactFlow, { Controls, Background, MiniMap } from 'reactflow';
-import { useStore } from './store';
+import { useStore } from '../store';
 import { shallow } from 'zustand/shallow';
 import { InputNode } from './nodes/inputNode';
 import { LLMNode } from './nodes/llmNode';
@@ -40,7 +40,7 @@ const selector = (state) => ({
   onConnect: state.onConnect,
 });
 
-export const PipelineUI = () => {
+export const NodesFlow = () => {
   const reactFlowWrapper = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
   const {
@@ -103,7 +103,7 @@ export const PipelineUI = () => {
       <div
         ref={reactFlowWrapper}
         className="border border-gray-300 shadow-md rounded-xl"
-        style={{ width: 'calc(100vw - 2rem)', height: '70vh' }}
+        style={{ width: 'calc(100vw - 2rem)', height: '67vh' }}
       >
         {nodes.length === 0 && (
           <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">

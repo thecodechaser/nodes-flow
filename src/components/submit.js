@@ -1,9 +1,10 @@
 // submit.js
 
-import { useStore } from './store';
+import { useStore } from '../store';
 import { useState } from 'react';
 import { CheckCircle, XCircle, AlertCircle, Loader2, X } from 'lucide-react';
-import { checkDAG } from './helper/checkDag';
+import { checkDAG } from '../helper/checkDag';
+import { Footer } from './footer';
 
 export const SubmitButton = () => {
   const nodes = useStore((state) => state.nodes);
@@ -28,7 +29,7 @@ export const SubmitButton = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-full gap-4 pt-6 pb-12 bg-gray-200">
+    <div className="flex flex-col items-center w-full gap-4 pt-6 pb-1 bg-gray-200">
       {result && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-40">
           <div className="relative w-full max-w-sm px-6 py-5 text-gray-800 bg-white border border-green-300 rounded-lg shadow-xl result-dialog animate-fade-in">
@@ -96,6 +97,7 @@ export const SubmitButton = () => {
         )}
         {loading ? 'Submitting...' : 'Submit Pipeline'}
       </button>
+      <Footer />
     </div>
   );
 };
