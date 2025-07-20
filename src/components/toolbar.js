@@ -17,7 +17,7 @@ export const PipelineToolbar = () => {
   return (
     <div className="px-6 pt-2 pb-4 bg-gray-200 border-b border-gray-300 shadow-md rounded-xl">
       <h1 className="pt-2 text-xl font-semibold text-blue-700 cursor-pointer">
-          Nodes Flow
+          Pipeline Flow Builder
         </h1>
       <h2 className="mb-3 text-lg font-semibold text-center text-gray-700 toolbar">
         🧩 Pipeline Nodes

@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="flex justify-center w-full text-sm text-gray-600">
       <p>
-        © {year} Nodes Flow. All rights reserved.{" "}
+        © {year} Pipeline Flow Builder. All rights reserved.{" "}
         <a
           href="https://thecodechaser.com"
           target="_blank"
