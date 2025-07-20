@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/thecodechaser-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pipeline Flow Builder
 
-## Available Scripts
+> Pipeline Flow Builder  is a visual editor that allows users to construct custom data processing pipelines with drag-and-drop simplicity. Each node, such as Input, Math, Delay, or Output, represents a specific function and can be connected to define the flow of logic. Users can configure each node’s parameters and visualize how data moves through the system. The tool ensures that the final pipeline forms a valid Directed Acyclic Graph (DAG), enabling safe and efficient execution of complex workflows. Whether for data manipulation or automation, Pipeline Flow Builder provides a clear and flexible way to design sequential processes.
 
-In the project directory, you can run:
+## Preview:
 
-### `npm start`
+![screenshot](./public/images/previews/preview1.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![screenshot](./public/images/previews/preview2.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![screenshot](./public/images/previews/preview3.png)
 
-### `npm test`
+## Built With
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- HTML
+- CSS
+- JavaScript
+- React
+- React Flow
+- Tailwind CSS
 
-### `npm run build`
+## Live version
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Pipeline Flow Builder](https://pipeline-flow.thecodechaser.com)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running follow these simple example steps.
 
-### `npm run eject`
+### Prerequisites
+- A text editor(preferably Visual Studio Code)
+- Node
+- Web browser
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Install
+- [Git](https://git-scm.com/downloads)
+- [Node](https://nodejs.org/en/download/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Using it Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Clone the project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash 
+git clone git@github.com:thecodechaser/pipeline-flow-builder.git
 
-## Learn More
+cd pipeline-flow-builder
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Install dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm i 
+or
+npm install
+```
+- To Start the development server
+```bash
+npm run start
+```
 
-### Code Splitting
+- To test the project
+```bash
+npm run test
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Visit And Open Files
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[Visit Repo](https://github.com/thecodechaser/pipeline-flow-builder)
 
-### Making a Progressive Web App
+## Download Repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Download Repo](https://github.com/thecodechaser/pipeline-flow-builder/archive/refs/heads/main.zip)
 
-### Advanced Configuration
+## Authors
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+👤 **Ranjeet Singh**
 
-### Deployment
+- Website: [thecodechaser.com](https://thecodechaser.com)
+- GitHub: [@thecodechaser](https://github.com/thecodechaser)
+- Twitter: [@thecodechaser](https://twitter.com/thecodechaser)
+- LinkedIn: [thecodechaser](https://linkedin.com/in/thecodechaser)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🤝 Contributing
 
-### `npm run build` fails to minify
+Contributions, issues, and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to check the [issues page](https://github.com/thecodechaser/pipeline-flow-builder/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Inspiration: ReactFlow
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
