@@ -31,5 +31,8 @@ code {
 .text-field {
   border: 1px solid #c2cada;
 }
+.toolbar {
+  margin-top: -40px;
+}
 
 

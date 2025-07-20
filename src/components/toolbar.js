@@ -15,8 +15,11 @@ import {
 
 export const PipelineToolbar = () => {
   return (
-    <div className="bg-gray-200 py-4 px-6 border-b border-gray-300 rounded-xl shadow-md">
-      <h2 className="text-lg font-semibold text-gray-700 mb-3 text-center">
+    <div className="px-6 pt-2 pb-4 bg-gray-200 border-b border-gray-300 shadow-md rounded-xl">
+      <h1 className="pt-2 text-xl font-semibold text-blue-700 cursor-pointer">
+          Nodes Flow
+        </h1>
+      <h2 className="mb-3 text-lg font-semibold text-center text-gray-700 toolbar">
         🧩 Pipeline Nodes
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 justify-center mx-[250px]">
@@ -24,7 +27,7 @@ export const PipelineToolbar = () => {
           type="customInput"
           label={
             <>
-              <Inbox className="w-4 h-4 inline-block align-middle mr-1" /> Input
+              <Inbox className="inline-block w-4 h-4 mr-1 align-middle" /> Input
             </>
           }
         />
@@ -32,7 +35,7 @@ export const PipelineToolbar = () => {
           type="llm"
           label={
             <>
-              <Brain className="w-4 h-4 inline-block align-middle mr-1" /> LLM
+              <Brain className="inline-block w-4 h-4 mr-1 align-middle" /> LLM
             </>
           }
         />
@@ -40,7 +43,7 @@ export const PipelineToolbar = () => {
           type="customOutput"
           label={
             <>
-              <Send className="w-4 h-4 inline-block align-middle mr-1" /> Output
+              <Send className="inline-block w-4 h-4 mr-1 align-middle" /> Output
             </>
           }
         />
@@ -48,7 +51,7 @@ export const PipelineToolbar = () => {
           type="text"
           label={
             <>
-              <FileText className="w-4 h-4 inline-block align-middle mr-1" /> Text
+              <FileText className="inline-block w-4 h-4 mr-1 align-middle" /> Text
             </>
           }
         />
@@ -56,7 +59,7 @@ export const PipelineToolbar = () => {
           type="math"
           label={
             <>
-              <Divide className="w-4 h-4 inline-block align-middle mr-1" /> Math
+              <Divide className="inline-block w-4 h-4 mr-1 align-middle" /> Math
             </>
           }
         />
@@ -64,7 +67,7 @@ export const PipelineToolbar = () => {
           type="switch"
           label={
             <>
-              <Shuffle className="w-4 h-4 inline-block align-middle mr-1" /> Switch
+              <Shuffle className="inline-block w-4 h-4 mr-1 align-middle" /> Switch
             </>
           }
         />
@@ -72,7 +75,7 @@ export const PipelineToolbar = () => {
           type="logger"
           label={
             <>
-              <File className="w-4 h-4 inline-block align-middle mr-1" /> Logger
+              <File className="inline-block w-4 h-4 mr-1 align-middle" /> Logger
             </>
           }
         />
@@ -80,7 +83,7 @@ export const PipelineToolbar = () => {
           type="delay"
           label={
             <>
-              <Timer className="w-4 h-4 inline-block align-middle mr-1" /> Delay
+              <Timer className="inline-block w-4 h-4 mr-1 align-middle" /> Delay
             </>
           }
         />
@@ -88,7 +91,7 @@ export const PipelineToolbar = () => {
           type="api"
           label={
             <>
-              <Globe className="w-4 h-4 inline-block align-middle mr-1" /> API
+              <Globe className="inline-block w-4 h-4 mr-1 align-middle" /> API
             </>
           }
         />

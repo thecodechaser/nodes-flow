@@ -1,10 +1,8 @@
 // ui.js
-// Displays the drag-and-drop UI
-// --------------------------------------------------
 
 import { useState, useRef, useCallback } from 'react';
 import ReactFlow, { Controls, Background, MiniMap } from 'reactflow';
-import { useStore } from './store';
+import { useStore } from '../store';
 import { shallow } from 'zustand/shallow';
 import { InputNode } from './nodes/inputNode';
 import { LLMNode } from './nodes/llmNode';
@@ -42,7 +40,7 @@ const selector = (state) => ({
   onConnect: state.onConnect,
 });
 
-export const PipelineUI = () => {
+export const NodesFlow = () => {
   const reactFlowWrapper = useRef(null);
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
   const {
@@ -104,12 +102,12 @@ export const PipelineUI = () => {
     <>
       <div
         ref={reactFlowWrapper}
-        className="border border-gray-300 rounded-xl shadow-md"
-        style={{ width: 'calc(100vw - 2rem)', height: '70vh' }}
+        className="border border-gray-300 shadow-md rounded-xl"
+        style={{ width: 'calc(100vw - 2rem)', height: '67vh' }}
       >
         {nodes.length === 0 && (
-          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
-            <p className="text-gray-400 text-lg font-medium">
+          <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
+            <p className="text-lg font-medium text-gray-400">
               Drop your nodes here to get started
             </p>
           </div>
@@ -127,6 +125,7 @@ export const PipelineUI = () => {
           proOptions={proOptions}
           snapGrid={[gridSize, gridSize]}
           connectionLineType="smoothstep"
+          connectionLineStyle={{ stroke: '#888', strokeWidth: 2 }}
         >
           <Background color="#555" gap={gridSize} />
           <Controls />
